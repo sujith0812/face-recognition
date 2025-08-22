@@ -1,0 +1,94 @@
+/* ==============================
+   index.css
+   Theme: Welcome / Landing Page
+   Colors: #8458B3, #D0BDF4, #E5EAF5
+============================== */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #E5EAF5, #D0BDF4);
+  color: #494D5F;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  background: #fff;
+  padding: 50px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 10px 25px rgba(73, 77, 95, 0.25);
+  animation: fadeUp 0.6s ease-in-out;
+}
+
+h1 {
+  font-size: 36px;
+  color: #8458B3;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #494D5F;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.actions a {
+  text-decoration: none;
+  padding: 14px 28px;
+  background: #8458B3;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(132, 88, 179, 0.3);
+}
+
+.actions a:hover {
+  background: #494D5F;
+  box-shadow: 0 8px 18px rgba(73, 77, 95, 0.35);
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .actions a {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}

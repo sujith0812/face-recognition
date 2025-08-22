@@ -1,0 +1,81 @@
+/* ==============================
+   start_attendance.css
+   Theme: Confirmation & Results
+   Colors: #A0D2EB, #8458B3, #494D5F, #E5EAF5
+============================== */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #E5EAF5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #494D5F;
+}
+
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 750px;
+  width: 95%;
+  box-shadow: 0 10px 25px rgba(73, 77, 95, 0.25);
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+h2 {
+  color: #8458B3;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+pre {
+  text-align: left;
+  background: #F8FAFC;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #ddd;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+a.back-link {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #8458B3;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a.back-link:hover {
+  background: #494D5F;
+  box-shadow: 0 6px 15px rgba(73, 77, 95, 0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  pre {
+    font-size: 13px;
+    padding: 15px;
+  }
+}
